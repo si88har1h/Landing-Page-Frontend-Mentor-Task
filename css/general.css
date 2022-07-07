@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+}
+/* ======================== */
+/* HELPER CLASSES */
+/* ======================== */
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.heading--primary {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.8rem;
+}
+.heading--secondary {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+}
+.margin-bottom-md {
+  margin-bottom: 2.4rem;
+}
+.margin-bottom-sm {
+  margin-bottom: 1.6rem;
+}
+a {
+  text-decoration: none;
+}
+/* ======================== */
+/* HERO SECTION */
+/* ======================== */
+.section-hero {
+  background: url("/images/bg-hero-desktop.svg"),
+    linear-gradient(hsl(192, 100%, 96%), hsl(192, 100%, 96%));
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.8rem 0;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1.2rem 4.8rem;
+  background-color: #fff;
+  box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 9999px;
+  transition: all 300ms ease;
+  color: hsl(192, 100%, 9%);
+}
+
+.btn:hover,
+.btn:active {
+  color: hsl(208, 11%, 55%);
+}
+
+.hero-container {
+  align-items: center;
+  padding: 2.4rem 0 4.8rem;
+}
+.hero-text-box {
+  padding-right: 2.4rem;
+}
+.hero--text {
+  font-size: 2rem;
+}
+.hero-img-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.hero--img {
+  width: 100%;
+}
+.hero--btn:link,
+.hero--btn:visited {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+}
+
+.hero--btn:hover,
+.hero--btn:active {
+  background-color: #ff75cc;
+  color: #fff;
+}
+
+/* ======================== */
+/* FEATURES SECTION */
+/* ======================== */
+.section-features {
+  margin: 10.2rem 0;
+}
+.features {
+  gap: 3.6rem;
+}
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 3.6rem 0 3.6rem;
+}
+.feature:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.feature-text-box {
+  padding: 0 9.2rem;
+}
+.feature--text {
+  font-size: 2rem;
+  color: hsl(208, 11%, 55%);
+}
+.feature-img-box {
+  display: flex;
+  justify-content: center;
+}
+.feature--img {
+  width: 80%;
+}
+
+/* ======================== */
+/* CTA SECTION */
+/* ======================== */
+
+.section-cta {
+  background-color: #fff;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3.6rem 0;
+  text-align: center;
+  box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transform: translateY(50%);
+  z-index: 2222;
+}
+.cta--btn:link,
+.cta--btn:visited {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.6rem 6.4rem;
+}
+
+/* ======================== */
+/* FOOTER SECTION */
+/* ======================== */
+.footer {
+  padding: 10.2rem;
+  padding-top: 12.4rem;
+  background-color: hsl(192, 100%, 9%);
+  row-gap: 3.6rem;
+  color: hsl(208, 11%, 55%);
+  grid-template-columns: 2fr repeat(3, 1fr);
+  column-gap: 4.8rem;
+  z-index: -1;
+}
+.logo--box {
+  grid-column: 1/-1;
+}
+.footer--logo {
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}
+.info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.info--text {
+  color: hsl(208, 11%, 55%);
+}
+.info--item {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.icons-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer--link:link,
+.footer--link:visited {
+  color: hsl(208, 11%, 55%);
+  border-bottom: 1px solid transparent;
+  transition: all 300ms ease;
+}
+
+.footer--link:hover,
+.footer--link:active {
+  border-bottom: 1px solid hsl(208, 11%, 55%);
+}
+
+.social-links {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+}
+.social--link:link,
+.social--link:visited {
+  color: hsl(208, 11%, 55%);
+  padding: 1.6rem;
+  transition: all 300ms ease;
+}
+.social--link:hover,
+.social--link:active {
+  color: hsl(322, 100%, 66%);
+}
+
+.social--link ion-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.copyright {
+  font-size: 1rem;
+}
